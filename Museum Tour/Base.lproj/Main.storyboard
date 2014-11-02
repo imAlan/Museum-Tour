@@ -1,9 +1,237 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qXa-zn-BoG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfW-Ep-7SB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="pxh-sv-IG3">
+            <objects>
+                <viewController id="dUA-mf-MRg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fxf-V2-LvK"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfo-0V-HTt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c9E-Jd-5yN">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0j-LZ-J5n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Peabody Museum of Natural History" id="d7y-zm-u0M">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lln-9s-fRx">
+                                            <connections>
+                                                <segue destination="gfW-Ep-7SB" kind="show" id="YsZ-An-1IL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="x0j-LZ-J5n"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="x0j-LZ-J5n"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9u-hL-n6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="-592.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mQu-sQ-b54">
+            <objects>
+                <viewController id="gfW-Ep-7SB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jwj-FX-Ywd"/>
+                        <viewControllerLayoutGuide type="bottom" id="9c2-0Q-5UU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cue-lu-0D2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWo-lZ-aGc">
+                                <rect key="frame" x="327" y="132" width="253" height="30"/>
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Peabody Museum of Natural History">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="95" width="258" height="80"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="dUA-mf-MRg" kind="show" id="KbH-hh-ak2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-Bv-ELt">
+                                <rect key="frame" x="75" y="211" width="146" height="30"/>
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Center for British Art">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="210" width="225" height="80"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="JvG-6W-bkC" kind="show" id="WeA-tg-TT6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74O-5T-sRG">
+                                <rect key="frame" x="58" y="132" width="181" height="30"/>
+                                <color key="backgroundColor" red="0.037718866964206364" green="0.20539648281471626" blue="0.49382218070652173" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Yale University Art Gallery">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="95" width="225" height="80"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="qXa-zn-BoG" kind="show" id="M60-LL-ZAI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-EP-ALW">
+                                <rect key="frame" x="327" y="221" width="229" height="30"/>
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Collection of Musical Instruments">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="210" width="258" height="80"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="6cl-TE-5Tf" kind="show" id="lT8-tG-wkJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yale Museums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvq-tW-hyh">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="217" y="37" width="134" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yale.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-AP-t3I">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="86" y="14" width="72" height="68"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Mvq-tW-hyh"/>
+                                <exclude reference="wEI-AP-t3I"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="Mvq-tW-hyh"/>
+                                <include reference="wEI-AP-t3I"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBB-ot-ziN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859" y="178.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lik-Hv-mjG">
+            <objects>
+                <viewController id="JvG-6W-bkC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bR6-SE-9uF"/>
+                        <viewControllerLayoutGuide type="bottom" id="lsp-r2-dgy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9f-z3-zwi">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Im-oe-wlO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="UQ7-L6-08X"/>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbF-qK-cH7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Center for British Arts" id="v4o-X0-lD3">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZhQ-H7-Ynu">
+                                            <connections>
+                                                <segue destination="gfW-Ep-7SB" kind="show" id="Bax-it-H9e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1Im-oe-wlO"/>
+                                <exclude reference="RbF-qK-cH7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="1Im-oe-wlO"/>
+                                <include reference="RbF-qK-cH7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nwD-pc-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1400" y="976.5"/>
+        </scene>
         <!--My View Controller-->
         <scene sceneID="VnR-CR-ujK">
             <objects>
@@ -18,49 +246,308 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU6-a4-EOc">
                                 <rect key="frame" x="271" y="150" width="73" height="30"/>
-                                <state key="normal" title="African Art">
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="East of the Wallace Line">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="213" width="225" height="80"/>
+                                </variation>
                                 <connections>
-                                    <action selector="AfricanArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="nMc-b0-of1"/>
+                                    <action selector="IndoPacificArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="Ekz-uk-aF7"/>
                                     <segue destination="LVB-YS-i5n" kind="show" id="Jvd-PH-EpG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daa-hV-RNc">
-                                <rect key="frame" x="262" y="222" width="90" height="30"/>
-                                <state key="normal" title="European Art">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="LVB-YS-i5n" kind="show" id="deD-Og-F15"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M5-Uu-IC2">
                                 <rect key="frame" x="262" y="222" width="90" height="30"/>
-                                <state key="normal" title="European Art">
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Roman in the Provinces">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="309" y="109" width="225" height="80"/>
+                                </variation>
                                 <connections>
-                                    <action selector="EuropeanArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="lDJ-bL-D9s"/>
+                                    <action selector="RomanArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="Zkn-Fy-SdJ"/>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="k6z-TU-lLd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-aL-0SM">
                                 <rect key="frame" x="276" y="80" width="62" height="30"/>
-                                <state key="normal" title="Asian Art">
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Vida y Drama de México">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="109" width="225" height="80"/>
+                                </variation>
                                 <connections>
-                                    <action selector="AsianArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="7bM-CC-eje"/>
+                                    <action selector="MexicanArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="8MF-UE-7xU"/>
                                     <segue destination="LVB-YS-i5n" kind="show" id="Ez4-aW-ZyQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Exhibitions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-o5-hec">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="59" width="146" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-aU-rJ9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="51" width="55" height="37"/>
+                                </variation>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-v9-4vO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Yale University Art Gallery" id="KAg-id-qYB">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="zWC-ig-NRc">
+                                            <connections>
+                                                <segue destination="gfW-Ep-7SB" kind="show" id="aWO-Hw-6hl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="About    " id="8uf-jp-8FA">
+                                            <connections>
+                                                <segue destination="UiW-55-KTA" kind="show" id="2Ze-5k-B7Q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGA-DM-NVM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.038146956078111638" green="0.20772762384317955" blue="0.49942680027173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Permanent-Collection Galleries">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="308" y="213" width="225" height="80"/>
+                                </variation>
+                                <connections>
+                                    <action selector="PermanentArt:" destination="qXa-zn-BoG" eventType="touchUpInside" id="v5X-55-Ka0"/>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="aSx-OK-cbz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dSk-o5-hec"/>
+                                <exclude reference="Oiz-aU-rJ9"/>
+                                <exclude reference="ut5-v9-4vO"/>
+                                <exclude reference="JGA-DM-NVM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="dSk-o5-hec"/>
+                                <include reference="Oiz-aU-rJ9"/>
+                                <include reference="ut5-v9-4vO"/>
+                                <include reference="JGA-DM-NVM"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co0-XK-me1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="131"/>
+            <point key="canvasLocation" x="-136" y="190.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8dt-Xg-dJp">
+            <objects>
+                <viewController id="6cl-TE-5Tf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="THS-VZ-cxv"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJw-hY-cyq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vBV-tO-XXN">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUs-hs-NXB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Collection of Musical Instruments" id="6Ho-bc-Iyg">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="p3T-6E-YR2">
+                                            <connections>
+                                                <segue destination="gfW-Ep-7SB" kind="show" id="Ilq-l9-n8f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="-7" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lUs-hs-NXB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="lUs-hs-NXB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1g-dZ-fgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-360" y="1030.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NNR-7W-hIA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsJ-2U-bSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="UiW-55-KTA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U4k-LX-XNq"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXj-0F-dK5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EIo-bh-uA7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_building.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BCH-kf-anD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="44" width="247" height="263"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tuesday - Friday:           10:00 AM - 5:00 PM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDj-Iw-4gB">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="66" width="307" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Thursday (Sept.-June): 10:00 AM - 5:00 PM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyd-Kz-oy8">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="96" width="312" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSG-li-Hf1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="399" y="37" width="46" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qei-eG-lOr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="389" y="160" width="67" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="jFf-0o-ki3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="355" y="184" width="134" height="128"/>
+                                </variation>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dF6-MM-C96">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="About" id="VMO-IW-QHZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="tZa-LP-Bya">
+                                            <connections>
+                                                <segue destination="qXa-zn-BoG" kind="show" id="50S-PR-JWR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Saturday - Sunday:         11:00 AM - 5:00 PM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bk4-IH-hWn">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="122" width="312" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BCH-kf-anD"/>
+                                <exclude reference="IDj-Iw-4gB"/>
+                                <exclude reference="jyd-Kz-oy8"/>
+                                <exclude reference="fSG-li-Hf1"/>
+                                <exclude reference="Qei-eG-lOr"/>
+                                <exclude reference="jFf-0o-ki3"/>
+                                <exclude reference="dF6-MM-C96"/>
+                                <exclude reference="Bk4-IH-hWn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="BCH-kf-anD"/>
+                                <include reference="IDj-Iw-4gB"/>
+                                <include reference="jyd-Kz-oy8"/>
+                                <include reference="fSG-li-Hf1"/>
+                                <include reference="Qei-eG-lOr"/>
+                                <include reference="jFf-0o-ki3"/>
+                                <include reference="dF6-MM-C96"/>
+                                <include reference="Bk4-IH-hWn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="606" y="-652.5"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="CtS-rA-C9T">
@@ -87,13 +574,23 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="131"/>
+            <point key="canvasLocation" x="606" y="160.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="art_building.jpg" width="364" height="280"/>
+        <image name="art_logo.png" width="260" height="190"/>
+        <image name="art_map.png" width="342" height="334"/>
+        <image name="yale.jpeg" width="250" height="250"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ez4-aW-ZyQ"/>
+        <segue reference="aWO-Hw-6hl"/>
+        <segue reference="M60-LL-ZAI"/>
+        <segue reference="k6z-TU-lLd"/>
     </inferredMetricsTieBreakers>
 </document>

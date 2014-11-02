@@ -11,16 +11,19 @@ import UIKit
 var gallery:Int!
 
 class myViewController: UIViewController {
-    @IBAction func AsianArt(sender: AnyObject) {
-        instance.gal = 0
-    }
-    @IBAction func AfricanArt(sender: AnyObject) {
-        print ("AA")
+    @IBAction func MexicanArt(sender: AnyObject) {
         instance.gal = 1
-        print (instance.gal)
     }
-    @IBAction func EuropeanArt(sender: AnyObject) {
+    @IBAction func RomanArt(sender: AnyObject) {
         instance.gal = 2
+    }
+    
+    @IBAction func IndoPacificArt(sender: AnyObject) {
+        instance.gal = 3
+    }
+
+    @IBAction func PermanentArt(sender: AnyObject) {
+        instance.gal = 4
     }
     override func viewDidLoad() {
         super.viewDidLoad()

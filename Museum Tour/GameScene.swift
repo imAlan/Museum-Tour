@@ -38,29 +38,51 @@ class GameScene: SKScene {
     var paintingTexture = SKTexture()
     var descriptionTexture = SKTexture()
     var paintingMoveAndRemove = SKAction()
-    
     var character: SKSpriteNode!
     var characterAtlas = SKTextureAtlas(named: "character")
     var characterFrames = [SKTexture]()
-    
     var paintingList = ["asian1", "asian2"]
     var descList = ["asiandescription1", "asiandescription2"]
-    
+    var numList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
     var len = 0
-    
     var count = 0
+    var place = String()
+    var canRestart = false
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        if !canRestart{
+            self.restart()
+        }
         //Physics
         self.physicsWorld.gravity = CGVectorMake(0.0, -5.0)
         
-        //Background
-        playBackgroundMusic("music.mp3")
+        switch(instance.gal) {
+        case 1:
+            place = "mexican"
+            break
+        case 2:
+            place = "rome"
+            break
+        case 3:
+            place = "indopacific"
+            break
+        case 4:
+            place = "permanent"
+            break
+        case _:
+            place = "permanent"
+            break
+        }
         
-        var background = SKSpriteNode(imageNamed: "beige.jpg")
+        //Background
+        playBackgroundMusic(place + "music.mp3")
+        
+        var background = SKSpriteNode(imageNamed: "background")
         self.addChild(background)
         background.position = CGPointMake(self.size.width/2, self.size.height/2)
+        
+        
 //        //Character
 //        var characterTexture = SKTexture(imageNamed:"Alien")
 //        characterTexture.filteringMode = SKTextureFilteringMode.Nearest
@@ -74,8 +96,6 @@ class GameScene: SKScene {
 //        character.physicsBody?.allowsRotation = false
 //        
 //        self.addChild(character)
-        
-        //
         var totalImgs = characterAtlas.textureNames.count
         for var x = 1; x < totalImgs + 1; x++
         {
@@ -86,14 +106,13 @@ class GameScene: SKScene {
         }
         
         character = SKSpriteNode(texture: characterFrames[0])
-//        self.addChild(character)
+//      self.addChild(character)
         character.setScale(0.5)
         character.position = CGPoint(x: self.frame.size.width * 0.35, y: self.frame.size.height * 0.8)
         character.physicsBody = SKPhysicsBody(circleOfRadius:character.size.height/2)
         character.physicsBody?.dynamic = true
         character.physicsBody?.allowsRotation = false
         self.addChild(character)
-
         
         character.runAction(SKAction.repeatActionForever(SKAction.animateWithTextures(characterFrames, timePerFrame: 0.1, resize: false, restore: true)))
         
@@ -116,21 +135,13 @@ class GameScene: SKScene {
         
         //Paintings
         
-        //Create the paintings
+        len = numList.count
         
-        //Shuffle the list of paintings and the list of descriptions
-        
-        len = paintingList.count
-        print ("::")
-        print (instance.gal)
         for i in 0...(len-1) {
             var rand = Int(arc4random_uniform(UInt32(len-i)))
-            var temp = paintingList[i]
-            var temp2 = descList[i]
-            paintingList[i] = paintingList[rand]
-            descList[i] = descList[rand]
-            paintingList[rand] = temp
-            descList[rand] = temp2
+            var temp = numList[i]
+            numList[i] = numList[rand]
+            numList[rand] = temp
         }
         
         paintingTexture = SKTexture(imageNamed:"asian1")
@@ -164,7 +175,7 @@ class GameScene: SKScene {
     
     func spawnPaintings() {
         var paintingFile = String()
-        paintingFile = paintingList[count]
+        paintingFile = place + numList[count]
         paintingTexture = SKTexture(imageNamed: paintingFile)
         let painting = SKSpriteNode(texture: paintingTexture)
         painting.setScale(1.0)
@@ -179,7 +190,7 @@ class GameScene: SKScene {
     
     func spawnDescriptions() {
         var descriptionFile = String()
-        descriptionFile = descList[count]
+        descriptionFile = place + "description" + numList[count]
         count += 1
         if (count == len) {
             count = 0
@@ -189,11 +200,13 @@ class GameScene: SKScene {
         painting.setScale(1.0)
         painting.position = CGPointMake(self.frame.size.width + paintingTexture.size().width * 1.5, self.frame.size.height/2.0)
         
-        painting.physicsBody = SKPhysicsBody(rectangleOfSize:painting.size)
-        painting.physicsBody?.dynamic = false
-        
         painting.runAction(paintingMoveAndRemove)
         self.addChild(painting)
+    }
+    
+    func restart() {
+        ground.removeAllChildren()
+        
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {

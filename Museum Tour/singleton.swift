@@ -15,7 +15,7 @@ class singleton{
         }
         return Singleton.instance
     }
-    var gal = 7
+    var gal = 0
 }
 
 let instance = singleton.sharedInstance
