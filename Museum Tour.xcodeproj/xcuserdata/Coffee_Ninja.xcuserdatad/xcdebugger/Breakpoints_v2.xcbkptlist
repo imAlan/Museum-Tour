@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Museum Tour/GameScene.swift"
+            timestampString = "436573581.601464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "GameScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.len.getter : Swift.Int"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.68514"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.len.setter : Swift.Int"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.685866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.len.materializeForSet : Swift.Int"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.686017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.init (Museum_Tour.GameScene.Type)(size : C.CGSize) -&gt; Museum_Tour.GameScene"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.686151"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1125">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.init (Museum_Tour.GameScene.Type)() -&gt; Museum_Tour.GameScene"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.686286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1081">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Museum_Tour.GameScene.init (Museum_Tour.GameScene.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Museum_Tour.GameScene&gt;"
+                  moduleName = "Museum Tour"
+                  urlString = "file:///Users/Coffee_Ninja/Google%20Drive/Documents/iOS/Museum%20Tour/Museum%20Tour/GameScene.swift"
+                  timestampString = "436573343.686417"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1113">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Museum Tour/GameScene.swift"
+            timestampString = "436573581.601464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "didMoveToView(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Museum Tour/myViewController.swift"
+            timestampString = "436580266.730738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
