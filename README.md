@@ -18,10 +18,9 @@ Kong Huang
 
 Made at YHACK 2014
 
+![Alt text](https://github.com/imAlan/Museum-Tour/blob/master/2.png?raw=true "2")
 
 ![Alt text](https://github.com/imAlan/Museum-Tour/blob/master/1.png?raw=true "1")
-
-![Alt text](https://github.com/imAlan/Museum-Tour/blob/master/2.png?raw=true "2")
 
 ![Alt text](https://github.com/imAlan/Museum-Tour/blob/master/3.png?raw=true "3")
 
