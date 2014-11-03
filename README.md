@@ -1,6 +1,6 @@
 Museum-Tour
 ===========
-Swift iOS Game for Yale Museums to display gallery
+Swift iOS Game for Yale Museums to display gallery. The basic concept is applicable to any museum looking to promote interest.
 
 Tech Stack
 ==========
@@ -12,7 +12,7 @@ Team Members
 ============
 Alan Chen
 
-Steve Huang
+Stern Huang
 
 Kong Huang
 
