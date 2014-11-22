@@ -2,6 +2,8 @@ Museum-Tour
 ===========
 Swift iOS Game for Yale Museums to display gallery. The basic concept is applicable to any museum looking to promote interest.
 
+Made at YHACK 2014
+
 Tech Stack
 ==========
 Swift
@@ -10,13 +12,12 @@ Yale Art API
 
 Team Members
 ============
-Alan Chen
+Alan Chen - Developer
 
-Stern Huang
+Stern Huang - Developer
 
-Kong Huang
+Kong Huang - Developer
 
-Made at YHACK 2014
 
 ![Alt text](https://github.com/imAlan/Museum-Tour/blob/master/2.png?raw=true "2")
 
